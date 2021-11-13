@@ -1,5 +1,9 @@
 {
   "app_title": "Titull",
   "language": "Gjuha",
-  "welcome_message": "Mireserdhet"
+  "welcome_message": "Mireserdhet",
+  "nav_shops": "SHOPS",
+  "nav_brands": "BRANDS",
+  "nav_products": "PRODUCTS",
+  "nav_services": "SERVICES"
 }

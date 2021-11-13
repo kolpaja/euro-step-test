@@ -1,12 +1,8 @@
-import React from 'react'
-import BrandLogo from '../BrandLogo'
-import Header from '../Header'
-
-const Home = () => {
+const Home = (props) => {
+    console.log(props);
     return (
         <div className="home">
-            <Header />
-            <BrandLogo />
+            helloads
         </div>
     )
 }

@@ -1,5 +1,9 @@
 {
   "app_title": "عنوان",
   "language": "اللغة",
-  "welcome_message": "اهلا بكم"
+  "welcome_message": "اهلا بكم",
+  "nav_shops": "SHOPS",
+  "nav_brands": "BRANDS",
+  "nav_products": "PRODUCTS",
+  "nav_services": "SERVICES"
 }

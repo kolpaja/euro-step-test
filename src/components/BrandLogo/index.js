@@ -1,5 +1,5 @@
 import React from 'react';
-import brandLogo from '../../utils/assets/icons/s-icon.png'
+import brandLogo from '../../utils/assets/icons/8-logo.png'
 
 const BrandLogo = () => {
     return (

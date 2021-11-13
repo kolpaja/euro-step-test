@@ -2,8 +2,8 @@ import React from 'react'
 
 const Airport = () => {
     return (
-        <div>
-            airport
+        <div className="airport">
+            Hello from airport
         </div>
     )
 }

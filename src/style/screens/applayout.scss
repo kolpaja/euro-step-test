@@ -1,0 +1,14 @@
+.app-layout {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  .header-backdrop {
+    width: 100%;
+    height: 560px;
+    background-image: url('../../utils/assets/img/home@2x.png');
+    background-size: cover;
+    color: #fff;
+  }
+  .inner-content {
+    margin: 10px auto;
+  }
+}

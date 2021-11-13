@@ -3,27 +3,28 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
+import AppLayout from "../screens/AppLayout";
 import routes from "./routes";
 
 function Routing() {
     return (
         <Router>
             <Switch>
-                {routes.map((route, index) => {
-                    return <Route
-                        key={route.path}
-                        path={route.path}
-                        exact={route.exact}
-                        breadcrumbName={route.breadcrumbName}
-                        component={(props) => {
-                            return (
-                                <div>
+                <AppLayout>
+                    {routes.map((route, index) => {
+                        return (<Route
+                            key={route.path}
+                            path={route.path}
+                            exact={route.exact}
+                            breadcrumbName={route.breadcrumbName}
+                            component={(props) => {
+                                return (
                                     <route.component {...props} />
-                                </div>
-                            );
-                        }}
-                    />
-                })}
+                                );
+                            }}
+                        />)
+                    })}
+                </AppLayout>
             </Switch>
         </Router>
     );

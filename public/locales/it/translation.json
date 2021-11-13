@@ -1,5 +1,9 @@
 {
   "app_title": "Titolo",
   "language": "Lingua",
-  "welcome_message": "Bienvenue"
+  "welcome_message": "Bienvenue",
+  "nav_shops": "SHOPS",
+  "nav_brands": "BRANDS",
+  "nav_products": "PRODUCTS",
+  "nav_services": "SERVICES"
 }
