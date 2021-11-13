@@ -1,0 +1,28 @@
+.er-btn {
+  border: none;
+  font-size: 14px;
+}
+.er-btn-main {
+  min-width: 280px;
+  padding: 13px 40px 11px;
+}
+
+.er-btn-md {
+  min-width: 280px;
+  padding: 12px 35px;
+}
+.er-btn-black {
+  background-color: black;
+  color: white;
+  &:hover {
+    background-color: #555;
+  }
+}
+.er-btn-white {
+  background-color: white;
+  color: black;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}

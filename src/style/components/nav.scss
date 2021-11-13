@@ -1,0 +1,117 @@
+.nav {
+  display: flex;
+  font-size: 20px;
+  margin-top: 20px;
+  position: relative;
+  span {
+    margin-right: 25px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .span-search {
+    display: flex;
+    align-self: center;
+  }
+}
+
+.brands-links {
+  width: 1122px;
+  height: 374px;
+  padding: 30px;
+  .brands-container {
+    display: flex;
+    .brand-left {
+      width: 700px;
+      height: 300px;
+      margin: 10px 30px 10px;
+      .left {
+        display: flex;
+        justify-content: flex-start;
+        .most {
+          font-size: 20px;
+          font-weight: bold;
+          padding-bottom: 20px;
+        }
+        .brands-view {
+          width: 300px;
+          height: 300px;
+          .brands-most {
+            margin-top: 10px;
+            width: 300px;
+            display: flex;
+            justify-content: flex-start;
+          }
+          .links {
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            span {
+              margin-bottom: 10px;
+            }
+          }
+        }
+        .explore {
+          height: 300px;
+          width: 200px;
+
+          .alfabet {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 25px;
+            font-size: 18px;
+            .letter {
+              width: 30px;
+              margin: 10px 5px;
+              padding: 5px;
+              height: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+      button {
+        width: 500px;
+        height: 25px;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        border: none;
+        &:hover {
+          background-color: #555;
+        }
+      }
+    }
+    .brand-right {
+      margin: 10px 20px 10px;
+      background-color: red;
+      .brands-img {
+        width: 363px;
+        height: 328px;
+      }
+    }
+  }
+}
+
+.ant-dropdown-menu {
+  top: 25px;
+  padding: 20px;
+}
+.line {
+  position: absolute !important;
+  top: -30px;
+  left: 100px;
+  background: #fff;
+  width: 1px;
+  height: 20px;
+}
+.line2 {
+  position: absolute !important;
+  top: -30px;
+  left: 561px;
+  background: #fff;
+  width: 1px;
+  height: 20px;
+}

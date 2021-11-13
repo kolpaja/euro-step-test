@@ -1,0 +1,41 @@
+.er-link {
+  font-size: 14px;
+}
+.er-link-smp {
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+    transform: translate(1.05);
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.er-link-sm {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    text-decoration: underline;
+    transform: translate(1.05);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.er-link-badge {
+  padding: 5px;
+  text-decoration: none;
+  background-color: #efefef;
+  border-radius: 10px;
+  color: black;
+
+  &:hover {
+    color: white;
+    background-color: gray;
+  }
+}

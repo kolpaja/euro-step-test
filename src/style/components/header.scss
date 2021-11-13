@@ -43,23 +43,6 @@
   }
 }
 
-.nav {
-  display: flex;
-  font-size: 20px;
-  margin-top: 20px;
-  position: relative;
-  span {
-    margin-right: 25px;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  .span-search {
-    display: flex;
-    align-self: center;
-  }
-}
-
 .order {
   position: absolute;
   top: 14px;
@@ -87,17 +70,4 @@
       font-size: 15px;
     }
   }
-}
-
-.ant-dropdown-menu {
-  top: 25px;
-  padding: 20px;
-}
-.line {
-  position: absolute !important;
-  top: -30px;
-  left: 68px;
-  background: #fff;
-  width: 1px;
-  height: 20px;
 }
