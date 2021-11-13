@@ -19,6 +19,10 @@
   width: 1122px;
   height: 374px;
   padding: 30px;
+  .link:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
   .brands-container {
     display: flex;
     .brand-left {
@@ -87,9 +91,34 @@
     .brand-right {
       margin: 10px 20px 10px;
       background-color: red;
+      position: relative;
       .brands-img {
         width: 363px;
         height: 328px;
+      }
+      h1 {
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%, -50%);
+        width: 192px;
+        height: 108px;
+        font-family: serif;
+        letter-spacing: 15px;
+        font-size: 40px;
+        font-weight: lighter;
+      }
+      h5 {
+        position: absolute;
+        top: 73%;
+        left: 55%;
+        font-size: 16px;
+        color: white;
+        transform: translate(-50%, -50%);
+        color: white;
+        width: 192px;
+        height: 108px;
       }
     }
   }

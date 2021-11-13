@@ -36,18 +36,18 @@ const Nav = () => {
                             <span className="most">MOST VIEWED BRANDS</span>
                             <div className="brands-most">
                                 <div className="links">
-                                    <span>Bottega veneta</span>
-                                    <span>Bottega veneta</span>
-                                    <span>Bottega veneta</span>
-                                    <span>Bottega veneta</span>
-                                    <span>Bottega veneta</span>
-                                    <span>Bottega veneta</span>
-                                    <span>Bottega veneta</span>
+                                    <span className="link">Bottega veneta</span>
+                                    <span className="link">Bottega veneta</span>
+                                    <span className="link">Bottega veneta</span>
+                                    <span className="link">Bottega veneta</span>
+                                    <span className="link">Bottega veneta</span>
+                                    <span className="link">Bottega veneta</span>
+                                    <span className="link">Bottega veneta</span>
                                 </div>
                                 <div className="links">
-                                    <span>Bottega veneta</span>
-                                    <span>Bottega veneta</span>
-                                    <span>Bottega veneta</span>
+                                    <span className="link">Bottega veneta</span>
+                                    <span className="link">Bottega veneta</span>
+                                    <span className="link">Bottega veneta</span>
                                 </div>
                             </div>
                         </div>
@@ -85,6 +85,10 @@ const Nav = () => {
                     <button>VIEW ALL BRANDS A-Z</button>
                 </div>
                 <div className="brand-right">
+
+                    <h1>GUCCI</h1>
+                    <h5>Mother's Day gift</h5>
+
                     <img
                         src={brandImg}
                         alt="brand image"
@@ -92,6 +96,23 @@ const Nav = () => {
                 </div>
             </div>
         </Menu >
+    );
+    const menuProducts = (
+        <Menu className="products-links">
+            <span className="line-products"></span>
+            <Space direction="vertical">
+                <Menu.Item>
+                    <a href="#" className="link">
+                        Bottega Veneta Shop
+                    </a>
+                </Menu.Item>
+                <Menu.Item>
+                    <a href="#" className="link">
+                        Duffry Shop
+                    </a>
+                </Menu.Item>
+            </Space>
+        </Menu>
     );
     return (
         <div className="nav">
