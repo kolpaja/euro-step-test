@@ -4,14 +4,15 @@ import { useTranslation } from 'react-i18next';
 import Button from "../Button"
 
 import { FiSearch } from 'react-icons/fi'
-import { Dropdown, Menu, Space } from "antd";
+import { Dropdown, Menu, Popover, Space, Tooltip } from "antd";
 import brandImg from "../../utils/assets/img/gucci.png"
+import { ArrowRightOutlined, CaretRightOutlined } from "@ant-design/icons";
 
 const Nav = () => {
     const { t } = useTranslation();
     const menuShops = (
         <Menu className="shops-links">
-            <span className="line"></span>
+            <span className="line-shops"></span>
             <Space direction="vertical">
                 <Menu.Item>
                     <a href="#" className="link">
@@ -28,7 +29,7 @@ const Nav = () => {
     );
     const menuBrands = (
         <Menu className="brands-links">
-            <span className="line2"></span>
+            <span className="line-brands"></span>
             <div className='brands-container'>
                 <div className="brand-left">
                     <div className="left">
@@ -97,23 +98,64 @@ const Nav = () => {
             </div>
         </Menu >
     );
+
+    const contentProductBeauty = (
+        <div className="beauty">
+            <a>asdasdf</a>
+            <a>asdasdf</a>
+        </div>
+    );
+
     const menuProducts = (
         <Menu className="products-links">
             <span className="line-products"></span>
-            <Space direction="vertical">
-                <Menu.Item>
-                    <a href="#" className="link">
-                        Bottega Veneta Shop
-                    </a>
-                </Menu.Item>
-                <Menu.Item>
-                    <a href="#" className="link">
-                        Duffry Shop
-                    </a>
-                </Menu.Item>
-            </Space>
+            <div className="products">
+                <Tooltip placement="right" title={contentProductBeauty}>
+                    <span className="link">
+                        <a>Product</a><CaretRightOutlined className="arrR" />
+                    </span>
+                </Tooltip>
+                <span className="link"><a>Product</a><CaretRightOutlined className="arrR" /></span>
+                <span className="link"><a>Product</a><CaretRightOutlined className="arrR" /></span>
+                <span className="link"><a>Product</a><CaretRightOutlined className="arrR" /></span>
+                <span className="link"><a>Product</a><CaretRightOutlined className="arrR" /></span>
+            </div>
         </Menu>
     );
+
+
+    const contentServicesAirport = (
+        <div className="airport">
+            <a>asdasdf</a>
+            <a>asdasdf</a>
+        </div>
+    );
+
+    const menuServices = (
+        <Menu className="services-links">
+            <span className="line-services"></span>
+            <div className="services">
+                <Tooltip placement="right" title={contentServicesAirport}>
+                    <span className="link">
+                        <a>Product</a><CaretRightOutlined className="arrR" />
+                    </span>
+                </Tooltip>
+                <span className="link"><a>Product</a><CaretRightOutlined className="arrR" /></span>
+                <span className="link"><a>Product</a><CaretRightOutlined className="arrR" /></span>
+                <span className="link"><a>Product</a><CaretRightOutlined className="arrR" /></span>
+                <span className="link"><a>Product</a><CaretRightOutlined className="arrR" /></span>
+            </div>
+        </Menu>
+    );
+    const menuSearch = (
+        <Menu className="search-menu">
+            <div className="search">
+                <input placeholder={t("product_search")} />
+                <ArrowRightOutlined className="search-arrow" />
+            </div>
+        </Menu>
+    )
+
     return (
         <div className="nav">
             <Dropdown overlay={menuShops} placement="bottomCenter" >
@@ -126,9 +168,21 @@ const Nav = () => {
                     {t("nav_brands")}
                 </span>
             </Dropdown>
-            <span>{t("nav_products")}</span>
-            <span>{t("nav_services")}</span>
-            <span className="span-search"><FiSearch className="search-icon" /></span>
+            <Dropdown overlay={menuProducts} placement="bottomCenter">
+                <span className="products">
+                    {t("nav_products")}
+                </span>
+            </Dropdown>
+            <Dropdown overlay={menuServices} placement="bottomCenter">
+                <span>
+                    {t("nav_services")}
+                </span>
+            </Dropdown>
+            <Dropdown overlay={menuSearch} placement="bottomRight">
+                <span className="span-search">
+                    <FiSearch className="search-icon" />
+                </span>
+            </Dropdown>
         </div>
     )
 }
