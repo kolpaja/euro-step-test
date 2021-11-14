@@ -1,21 +1,13 @@
-import Button from "../Button"
-import ERLink from "../ERLink";
+import Explore from "../Explore";
+import Slider from "../Slider";
+
 
 const Home = (props) => {
     console.log(props);
     return (
         <div className="home">
-            <h1>Euro step keep it up</h1>
-            <Button
-                type="button"
-                size="md"
-                color="black"
-                text="hello there" />
-            <ERLink
-                type="badge"
-                text="link"
-                to="#"
-            />
+            <Explore />
+            <Slider />
         </div>
     )
 }

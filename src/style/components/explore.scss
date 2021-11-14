@@ -1,0 +1,57 @@
+.explore {
+  width: 980px;
+  height: 100px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .explore-brands {
+    width: 125px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    img {
+      width: 60px;
+      height: 50px;
+    }
+  }
+  .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      width: 5px;
+      height: 5px;
+      border-radius: 50px;
+      background-color: rgb(129, 128, 128);
+      margin-right: 5px;
+    }
+  }
+  .plane {
+    width: 125px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    img {
+      width: 60px;
+      height: 50px;
+    }
+  }
+  .book {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .fa-store {
+      width: 30px;
+      height: 20px;
+    }
+  }
+}

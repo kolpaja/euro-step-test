@@ -6,5 +6,8 @@
   "nav_brands": "BRANDS",
   "nav_products": "PRODUCTS",
   "nav_services": "SERVICES",
-  "product_search": "Search products ..."
+  "product_search": "Search products ...",
+  "insert_flight_info": "INSERT FLIGHT INFORMATION",
+  "explore_brand": "EXPLORE BRANDS",
+  "book": "BOOK & PICK UP AT THE TERMINAL"
 }
