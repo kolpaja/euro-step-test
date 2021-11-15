@@ -83,7 +83,7 @@
 
   .new-in {
     width: 1200px;
-    height: 500px;
+    height: 600px;
     // background-color: blue;
     margin: 20px auto;
     .new-in-header {
@@ -139,6 +139,59 @@
           line-height: 1.7;
         }
       }
+    }
+  }
+}
+.categories {
+  display: flex;
+  width: 1240px;
+  height: 325px;
+  margin: 20px auto;
+  .woman {
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    width: 620px;
+    height: 325px;
+    img {
+      width: 620px;
+      height: 325px;
+    }
+    span {
+      position: absolute;
+      background: white;
+      width: 120px;
+      height: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .men {
+    position: relative;
+    overflow: hidden;
+
+    width: 620px;
+    height: 325px;
+    img {
+      position: absolute;
+      left: -100%;
+      width: 1240px;
+    }
+    span {
+      position: absolute;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 42px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }

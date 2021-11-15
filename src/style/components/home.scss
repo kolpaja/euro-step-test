@@ -1,2 +1,36 @@
 .home {
+  .brands {
+    .name {
+      width: 200px;
+      height: 20px;
+      margin: 20px auto;
+      a {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+    .brands-container {
+      border: 1px solid black;
+      width: 1240px;
+      height: 360px;
+      margin: 10px auto;
+      padding: 30px 10px 20px 10px;
+    }
+    .brands-list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 20px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+          margin: 10px;
+        }
+      }
+    }
+  }
 }

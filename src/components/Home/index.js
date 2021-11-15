@@ -1,5 +1,6 @@
 import Explore from "../Explore";
 import Collections from "../Collections";
+import Brands from "../Brands";
 
 
 const Home = (props) => {
@@ -8,6 +9,7 @@ const Home = (props) => {
         <div className="home">
             <Explore />
             <Collections />
+            <Brands />
         </div>
     )
 }
