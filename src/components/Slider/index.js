@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 import BtnSlider from './BtnSlider'
-import { dataSlider } from './dataSlider'
+import { dataSlider } from './dataSlider';
+import Button from "../Button"
+import ERLink from '../ERLink';
+import { useTranslation } from 'react-i18next';
 
 
 const Slider = () => {
+    const { t } = useTranslation();
 
     const [slideIndex, setSlideIndex] = useState(1)
 
@@ -41,6 +45,14 @@ const Slider = () => {
                             <img
                                 src={item.img}
                             />
+                            <div className="img-info">
+                                <span className="line" />
+                                <div>
+                                    <span className="item-title">{item.title.toLocaleUpperCase()}</span>
+                                    <p>{item.text}</p>
+                                    <a>{t("shop_now")}</a>
+                                </div>
+                            </div>
                         </div>
                     )
                 })

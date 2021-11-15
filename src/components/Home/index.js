@@ -1,5 +1,5 @@
 import Explore from "../Explore";
-import Slider from "../Slider";
+import Collections from "../Collections";
 
 
 const Home = (props) => {
@@ -7,7 +7,7 @@ const Home = (props) => {
     return (
         <div className="home">
             <Explore />
-            <Slider />
+            <Collections />
         </div>
     )
 }
