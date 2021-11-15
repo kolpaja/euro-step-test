@@ -3,11 +3,27 @@
   height: 390px;
   margin: 30px auto 0;
   .assists {
-    height: 55px;
+    height: 75px;
     background: #efefef;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // padding: 2px;
+      width: 35px;
+      height: 35px;
+      border: 1px solid #555;
+      border-radius: 50%;
+      font-size: 25px;
+    }
   }
   .footer {
     height: 335px;

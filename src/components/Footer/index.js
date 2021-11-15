@@ -1,4 +1,5 @@
-import { FiFacebook, FiInstagram, FiTwitter, FiYoutube } from "react-icons/fi";
+import { QuestionCircleOutlined, QuestionOutlined } from "@ant-design/icons";
+import { FiFacebook, FiInstagram, FiPhoneCall, FiSettings, FiTwitter, FiYoutube } from "react-icons/fi";
 import logo from '../../utils/assets/icons/8-logo.png'
 
 const Footer = () => {
@@ -6,15 +7,15 @@ const Footer = () => {
         <div className="footer-container">
             <div className="assists">
                 <div>
-                    <span>set</span>
+                    <span className="icons"><FiSettings /></span>
                     <span>How ut works</span>
                 </div>
                 <div>
-                    <span>set</span>
+                    <span className="icons"><QuestionOutlined /></span>
                     <span>FAQ's</span>
                 </div>
                 <div>
-                    <span>set</span>
+                    <span className="icons"><FiPhoneCall /></span>
                     <span>Need Help?</span>
                 </div>
             </div>

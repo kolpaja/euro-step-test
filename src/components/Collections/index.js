@@ -1,7 +1,7 @@
 import DrinksCollection from './DrinksCollection'
-// import ForYouCollection from './ForYouCollection'
 import NewInCollection from './NewInCollection'
 import ShoesCollection from './ShoesCollection'
+import ForYouCollection from './ForYouCollection';
 
 import woman from "../../utils/assets/img/women.png";
 import men from "../../utils/assets/img/men@2x.png"
@@ -22,7 +22,7 @@ const Collections = () => {
                     <span>MEN</span>
                 </div>
             </div>
-            {/* <ForYouCollection /> */}
+            <ForYouCollection />
         </div>
     )
 }
