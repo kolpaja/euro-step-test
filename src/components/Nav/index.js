@@ -52,32 +52,37 @@ const Nav = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="explore">
+                        <div className="explore-nav">
                             <span className="most">EXPLORE</span>
                             <div className="alfabet">
                                 <span className="letter"><a>0-9</a></span>
                                 <span className="letter"><a>A</a></span>
-                                <span className="letter"><a></a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
+                                <span className="letter"><a>B</a></span>
+                                <span className="letter"><a>C</a></span>
+                                <span className="letter"><a>D</a></span>
+                                <span className="letter"><a>E</a></span>
+                                <span className="letter"><a>F</a></span>
+                                <span className="letter"><a>G</a></span>
+                                <span className="letter"><a>H</a></span>
+                                <span className="letter"><a>I</a></span>
 
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
-                                <span className="letter"><a>A</a></span>
+                                <span className="letter"><a>J</a></span>
+                                <span className="letter"><a>K</a></span>
+                                <span className="letter"><a>L</a></span>
+                                <span className="letter"><a>M</a></span>
+                                <span className="letter"><a>N</a></span>
+                                <span className="letter"><a>O</a></span>
+                                <span className="letter"><a>P</a></span>
+                                <span className="letter"><a>Q</a></span>
+                                <span className="letter"><a>R</a></span>
+                                <span className="letter"><a>S</a></span>
+                                <span className="letter"><a>T</a></span>
+                                <span className="letter"><a>U</a></span>
+                                <span className="letter"><a>V</a></span>
+                                <span className="letter"><a>W</a></span>
+                                <span className="letter"><a>X</a></span>
+                                <span className="letter"><a>Y</a></span>
+                                <span className="letter"><a>Z</a></span>
 
 
                             </div>
