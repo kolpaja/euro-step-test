@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
 import BtnSlider from './BtnSlider'
-import { dataSlider } from './dataSlider';
+import { dataCollections } from './dataCollections';
 import { useTranslation } from 'react-i18next';
 
 
-const Slider = () => {
+const NewInSlider = () => {
     const { t } = useTranslation();
 
     const [slideIndex, setSlideIndex] = useState(1)
 
     const nextSlide = () => {
-        if (slideIndex !== dataSlider.length) {
+        if (slideIndex !== dataCollections.length) {
             setSlideIndex(slideIndex + 1)
         }
-        else if (slideIndex === dataSlider.length) {
+        else if (slideIndex === dataCollections.length) {
             setSlideIndex(1)
         }
     }
@@ -23,31 +23,27 @@ const Slider = () => {
             setSlideIndex(slideIndex - 1)
         }
         else if (slideIndex === 1) {
-            setSlideIndex(dataSlider.length)
+            setSlideIndex(dataCollections.length)
         }
     }
 
-    const moveDot = index => {
-        setSlideIndex(index)
-    }
-
     return (
-        <div className="container-slider" >
+        <div className="new-in-container" >
             {
-                dataSlider.map((item, index) => {
+                dataCollections.map((item, index) => {
                     return (
                         <div
                             key={item.id}
-                            className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
+                            className={slideIndex === index + 1 ? "new-in-slide new-in-active-anim" : "new-in-slide"}
                         >
                             <img
                                 src={item.img}
                             />
-                            <div className="img-info">
-                                <span className="line" />
+                            <div className="new-in-img-info">
+                                <span />
                                 <div>
-                                    <span className="item-title">{item.title.toLocaleUpperCase()}</span>
-                                    <p>{item.text}</p>
+                                    <span className="item-name">{item.name.toLocaleUpperCase()}</span>
+                                    <p>{item.description}</p>
                                     <a>{t("shop_now")}</a>
                                 </div>
                             </div>
@@ -57,17 +53,8 @@ const Slider = () => {
             }
             < BtnSlider moveSlide={nextSlide} direction={"next"} />
             <BtnSlider moveSlide={prevSlide} direction={"prev"} />
-
-            <div className="container-dots">
-                {Array.from({ length: 3 }).map((item, index) => (
-                    <div
-                        onClick={() => moveDot(index + 1)}
-                        className={slideIndex === index + 1 ? "dot active" : "dot"}
-                    ></div>
-                ))}
-            </div>
         </div >
     )
 };
 
-export default Slider;
+export default NewInSlider;
