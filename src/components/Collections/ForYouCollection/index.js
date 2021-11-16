@@ -25,6 +25,8 @@ const ForYouCollection = () => {
         dots: true,
         infinite: false,
         speed: 500,
+        lazyLoad: true,
+        swipeToSlide: true,
         slidesToShow: 4,
         slidesToScroll: 4,
         nextArrow: <NextArrow />,
@@ -49,10 +51,11 @@ const ForYouCollection = () => {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 375,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    initialSlide: 1,
                 }
             }
         ]

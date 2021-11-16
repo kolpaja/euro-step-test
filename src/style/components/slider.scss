@@ -35,6 +35,9 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  .line-slider {
+    display: none;
+  }
   .item-title {
     font-size: 30px;
   }
@@ -106,4 +109,54 @@
 }
 .dot.active {
   border: 2px solid #999;
+}
+
+@media screen and (max-width: 375px) {
+  .container-slider {
+    width: 360px;
+    height: 534px;
+    img {
+      width: 345px;
+    }
+
+    .img-info {
+      width: 308px;
+      height: 280px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 100;
+      background: hsla(0, 0%, 100%, 0.9);
+
+      .item-title {
+        font-size: 24px;
+        font-weight: bolder;
+      }
+
+      .line {
+        display: none;
+      }
+      .line-slider {
+        display: block;
+        height: 2px;
+        width: 80px;
+        background: #555;
+        margin-top: 15px;
+      }
+      a {
+        font-weight: bolder;
+      }
+      div {
+        p {
+          margin: 20px 0;
+        }
+      }
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 15px;
+    }
+  }
 }

@@ -7,6 +7,10 @@
       overflow: hidden;
       margin-right: 20px;
       position: relative;
+      img {
+        width: 610px;
+        height: 610px;
+      }
       .frame {
         position: absolute;
         top: 50%;
@@ -213,7 +217,7 @@
   opacity: 1;
   font-size: 35px;
   color: #555;
-  margin-right: 10px;
+  // margin-right: 10px;
 }
 
 .for-you {
@@ -252,6 +256,104 @@
       font-weight: bolder;
       width: 200px;
       text-shadow: 1px 1px 8px black;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .collections {
+    .shoes {
+      width: 375px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      overflow: hidden;
+      .left {
+        position: relative;
+        width: 355px;
+        height: 345px;
+        margin-bottom: 30px;
+        overflow: hidden;
+        object-fit: cover;
+        img {
+          width: 355px;
+          height: 345px;
+        }
+        .frame {
+          width: 280px;
+          height: 285px;
+          left: 180px;
+        }
+        span {
+          width: 185px;
+          height: 28px;
+          top: 20px;
+          left: 85px;
+        }
+        button {
+          bottom: 10px;
+          left: 95px;
+        }
+      }
+      .right {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 355px;
+        height: 820px;
+        div {
+          img {
+            width: 355px !important;
+            height: 345px !important;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .categories {
+      width: 375px;
+      height: 710px;
+      flex-direction: column;
+      .woman {
+        margin-bottom: 20px;
+        overflow: hidden;
+        width: 345px;
+        height: 345px;
+        img {
+          width: 345px;
+          height: 345px;
+        }
+        span {
+          width: 158px;
+          height: 42px;
+          left: 50%;
+          top: 88%;
+        }
+      }
+      .men {
+        width: 345px;
+        height: 345px;
+        img {
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 345px;
+          height: 345px;
+        }
+        span {
+          width: 158px;
+          height: 42px;
+          left: 50%;
+          top: 85%;
+        }
+      }
+    }
+    .new-in {
+      width: 375px;
+      height: 500px;
+      padding: 0 15px;
+      .new-in-item {
+      }
     }
   }
 }

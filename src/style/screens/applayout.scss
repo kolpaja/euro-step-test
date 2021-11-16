@@ -1,6 +1,7 @@
 .app-layout {
   font-family: 'Open Sans', sans-serif;
   position: relative;
+  overflow: hidden;
   .header-backdrop {
     width: 100%;
     height: 560px;
@@ -41,7 +42,7 @@
     margin: 10px auto;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 375px) {
   .app-layout {
     .header-backdrop {
       width: 100%;

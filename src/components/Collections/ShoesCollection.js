@@ -9,7 +9,7 @@ const ShoesCollection = () => {
     return (
         <div className="shoes">
             <div className="left">
-                <ERimg alt="shoes" src={taka} width="610" height="610" />
+                <img alt="shoes" src={taka} />
                 <div className="frame" />
                 <span>SHOES SELECTION</span>
                 <button>{t("shop_now")}</button>

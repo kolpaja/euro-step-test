@@ -1,12 +1,11 @@
 import Slider from "react-slick";
-import BtnSlider from "./BtnSlider";
 import { dataCollections } from "./dataCollections";
 
 const NextArrow = (props) => {
     const { className, style, onClick } = props;
     return (
         <div
-            className={`${className} new-in-next`}
+            className={`${className}`}
             onClick={onClick}
         />
     );
@@ -15,19 +14,21 @@ const PrevArrow = (props) => {
     const { className, style, onClick } = props;
     return (
         <div
-            className={`${className} new-in-prev`}
+            className={`${className}`}
             onClick={onClick}
         />
     );
 }
 
 const NewInCollection = () => {
-    var settings = {
+    const settings = {
         dots: true,
         infinite: false,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
+        lazyLoad: true,
+        swipeToSlide: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         initialSlide: 0,
@@ -50,10 +51,10 @@ const NewInCollection = () => {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 375,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
             }
         ]

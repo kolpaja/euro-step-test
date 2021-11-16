@@ -47,6 +47,7 @@ const Slider = () => {
                                 <span className="line" />
                                 <div>
                                     <span className="item-title">{item.title.toLocaleUpperCase()}</span>
+                                    <div className="line-slider" />
                                     <p>{item.text}</p>
                                     <a>{t("shop_now")}</a>
                                 </div>
