@@ -66,7 +66,7 @@ const NewInCollection = () => {
             </div>
             <Slider {...settings}>
                 {dataCollections.map((item, index) => (
-                    <div key={index} className="new-in-item">
+                    <div key={item.id.toString()} className="new-in-item">
                         <div className="item-img">
                             <img alt={item.name} src={item.img} />
                             {item.isPromo && <span>PROMO</span>}

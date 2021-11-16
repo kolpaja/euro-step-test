@@ -1,7 +1,6 @@
 .app-layout {
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  overflow: hidden;
   .header-backdrop {
     width: 100%;
     height: 560px;
@@ -14,11 +13,13 @@
       top: 200px;
       width: 610px;
       height: 294px;
-      animation: headers 2s ease-in;
       display: flex;
       padding: 20px;
       align-items: flex-start;
       justify-content: center;
+      .text-animate {
+        animation: disolving 1s ease-out;
+      }
       h1 {
         color: white;
         font-weight: bolder;
@@ -31,6 +32,7 @@
         border: 1px solid white;
         margin-right: 10px;
         margin-top: 25px;
+        animation: line 1s ease-out;
       }
     }
   }
@@ -39,12 +41,58 @@
     margin: 10px auto;
   }
 }
-
-@keyframes headers {
+@media (max-width: 360px) {
+  .app-layout {
+    .header-backdrop {
+      width: 100%;
+      height: 375px;
+      background-image: url('../../utils/assets/img/home2x.png');
+      background-size: cover;
+      .header-animate {
+        width: 360px;
+        height: 300px;
+        top: 375px;
+        left: 0;
+        color: black;
+        h1 {
+          color: black;
+          text-shadow: none;
+          font-size: 25px;
+        }
+        .line {
+          display: none;
+        }
+        .text-animate {
+          animation: none;
+          button {
+            width: 294px;
+            height: 42px;
+          }
+          .dividers {
+            width: 330px;
+            height: 2px;
+            background-color: #555;
+            margin: 20px auto;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes disolving {
   from {
-    transform: translateX(-100vh);
+    transform: translateY(100vh);
   }
   to {
-    transform: translateX(10vh);
+    transform: translateY(0vh);
+  }
+}
+@keyframes line {
+  from {
+    transform: translateX(0) scale(0);
+    transform-origin: 50%;
+  }
+  to {
+    transform: translateX(0) scale(1);
   }
 }

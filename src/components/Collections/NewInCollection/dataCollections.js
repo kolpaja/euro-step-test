@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 import dress from "../../../utils/assets/img/dress.png";
 import mens from "../../../utils/assets/img/mens.png"
 import shoeBlack from "../../../utils/assets/img/shoe-black.png";
@@ -6,7 +8,7 @@ import syze from "../../../utils/assets/img/syze.png";
 
 export const dataCollections = [
     {
-        id: 1,
+        id: uuidv4(),
         img: dress,
         isPromo: true,
         name: "Brand Name",
@@ -15,7 +17,7 @@ export const dataCollections = [
         promoPrice: 830,
     },
     {
-        id: 2,
+        id: uuidv4(),
         img: mens,
         isPromo: false,
         name: "Brand Name",
@@ -24,7 +26,7 @@ export const dataCollections = [
         promoPrice: 830,
     },
     {
-        id: 3,
+        id: uuidv4(),
         img: shoeBlack,
         isPromo: false,
         name: "Brand Name",
@@ -33,7 +35,7 @@ export const dataCollections = [
         promoPrice: 830,
     },
     {
-        id: 4,
+        id: uuidv4(),
         img: shirt,
         isPromo: true,
         name: "Brand Name",
@@ -42,7 +44,7 @@ export const dataCollections = [
         promoPrice: 830,
     },
     {
-        id: 5,
+        id: uuidv4(),
         img: syze,
         isPromo: true,
         name: "Brand Name",

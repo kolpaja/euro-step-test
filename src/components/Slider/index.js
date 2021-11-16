@@ -37,7 +37,7 @@ const Slider = () => {
                 dataSlider.map((item, index) => {
                     return (
                         <div
-                            key={item.id}
+                            key={item.id.toString()}
                             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
                         >
                             <img

@@ -27,6 +27,21 @@
     height: 24px;
   }
 }
+@media (max-width: 360px) {
+  .header {
+    padding: 5px 15px;
+    .navigate {
+      justify-content: space-between;
+      .naviage-menu {
+        .bars {
+          width: 25px;
+          height: 25px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
 
 .brand-logo {
   img {

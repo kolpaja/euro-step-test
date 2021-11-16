@@ -65,7 +65,7 @@ const ForYouCollection = () => {
             </div>
             <Slider {...settings}>
                 {data.map((item, index) => (
-                    <div key={index} className="for-you-item">
+                    <div key={item.id.toString()} className="for-you-item">
                         <div className="item-img">
                             <img alt={item.name} src={item.img} />
                             <span>{item.categories}</span>
