@@ -5,7 +5,7 @@ const NextArrow = (props) => {
     const { className, style, onClick } = props;
     return (
         <div
-            className={`${className}`}
+            className={`${className} new-in-next`}
             onClick={onClick}
         />
     );
@@ -14,7 +14,7 @@ const PrevArrow = (props) => {
     const { className, style, onClick } = props;
     return (
         <div
-            className={`${className}`}
+            className={`${className} new-in-prev`}
             onClick={onClick}
         />
     );
@@ -51,7 +51,7 @@ const NewInCollection = () => {
                 }
             },
             {
-                breakpoint: 375,
+                breakpoint: 376,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
