@@ -38,5 +38,20 @@
 @media (max-width: 375px) {
   .home {
     margin: 250px 10px 20px 10px;
+
+    .brands {
+      text-align: center;
+      width: 360px;
+      .brands-container {
+        width: 350px;
+        height: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        text-align: center;
+        .brands-list {
+          flex-direction: column;
+        }
+      }
+    }
   }
 }

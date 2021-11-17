@@ -29,6 +29,10 @@
 }
 @media (max-width: 375px) {
   .header {
+    .header-menu {
+      width: 300px;
+    }
+
     padding: 5px 15px;
     .navigate {
       justify-content: space-between;
@@ -38,6 +42,32 @@
           height: 25px;
           margin-right: 5px;
         }
+      }
+    }
+  }
+  .ant-drawer-body {
+    padding: 40px 0 10px !important;
+    max-width: 0 10px;
+  }
+  .mob-line {
+    width: 280px;
+    height: 1px;
+    margin: 10px auto;
+    background-color: #555;
+  }
+  .mob-links {
+    height: 40px;
+    position: relative;
+    .mob-order {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    .language {
+      left: 20px;
+      top: 0;
+      svg {
+        transform: rotate(-90deg);
       }
     }
   }
